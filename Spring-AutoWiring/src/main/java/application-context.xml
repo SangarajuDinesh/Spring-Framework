@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="mobile" class="com.kn.Bean.Mobile">
+		<property name="brand" value="Iphone"></property>
+		<property name="ram" value="8gb"></property>
+		<property name="cost" value="145000"></property>
+	</bean>
+	<bean id="person" class="com.kn.Bean.Person">
+		<property name="id" value="111"></property>
+		<property name="age" value="22"></property>
+		<property name="mobile" ref="mobile"></property>
+	</bean>
+</beans>
